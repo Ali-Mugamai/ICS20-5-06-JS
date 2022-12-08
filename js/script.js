@@ -12,24 +12,13 @@ if (navigator.serviceWorker) {
     scope: "/ICS20-5-01-JS/",
   })
 }
-
-/**
- * This function updates the slider value.
- */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-}
 /**
  * gets a random number and displays if you are right or wrong
  */
 function myButtonClicked() {
-  const randomNumber = Math.floor(Math.random() * 6) + 1
+  const num_one = parseInt(document.getElementById("hourly_rate").value)
+  const num_two = parseInt(document.getElementById("hourly_rate").value)
 
-  if (randomNumber == slider.value) {
-    answer = "correct"
-  } else {
-    answer = "wrong"
-  }
-
+  while ()
   document.getElementById("answer").innerHTML = "<p>Value is " + answer + "</p>"
 }

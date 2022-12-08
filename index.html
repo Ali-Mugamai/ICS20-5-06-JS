@@ -59,23 +59,39 @@
           height="25%"
         />
         <p></p>
-        <div id="slider-value">?</div>
-        <!-- Slider with Starting Value -->
-        <!-- Note: I added and ID to this component, so I could reference it in code -->
-        <!-- Note: I also placed it inside a "label" for accessability -->
-        <label>
-          Slider's Value
-          <input
-            id="slider"
-            class="mdl-slider mdl-js-slider"
-            type="range"
-            min="1"
-            max="6"
-            value="1"
-            tabindex="0"
-            onchange="updateSliderValue(this.value)"
-          />
-        </label>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>first_num</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="first_num"
+            />
+            <label class="mdl-textfield__label" for="first_num"
+              >first number ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <p> multiplied by...</p>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>second number</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="second_num"
+            />
+            <label class="mdl-textfield__label" for="second_num"
+              >second number ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
