@@ -8,17 +8,20 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-5-01-JS/sw.js", {
-    scope: "/ICS20-5-01-JS/",
+  navigator.serviceWorker.register("/ICS20-5-06-JS/sw.js", {
+    scope: "/ICS20-5-06-JS/",
   })
 }
 /**
  * gets a random number and displays if you are right or wrong
  */
 function myButtonClicked() {
-  const num_one = parseInt(document.getElementById("hourly_rate").value)
-  const num_two = parseInt(document.getElementById("hourly_rate").value)
-
-  while ()
-  document.getElementById("answer").innerHTML = "<p>Value is " + answer + "</p>"
+  const num_one = parseInt(document.getElementById("first_num").value)
+  const num_two = parseInt(document.getElementById("second_num").value)
+  counter = 0
+  while (counter < num_two) {
+    counter++
+    num_one + num_one
+  }
+  document.getElementById("answer").innerHTML = "<p>Value is " + num_one + "</p>"
 }
