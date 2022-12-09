@@ -23,5 +23,6 @@ function myButtonClicked() {
     counter++
     num_one + num_one
   }
-  document.getElementById("answer").innerHTML = "<p>Value is " + num_one + "</p>"
+  document.getElementById("answer").innerHTML =
+    "<p>Value is " + num_one + "</p>"
 }
