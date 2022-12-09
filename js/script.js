@@ -20,7 +20,7 @@ function myButtonClicked() {
   const num_two = parseInt(document.getElementById("second_num").value)
   counter = 0
   while (counter < num_two) {
-    counter++
+    counter = counter + 1
     answer = answer + num_one
   }
   document.getElementById("answer").innerHTML = "<p>Value is " + answer + "</p>"
