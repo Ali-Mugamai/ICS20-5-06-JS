@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 function myButtonClicked() {
   const num_one = parseInt(document.getElementById("first_num").value)
   const num_two = parseInt(document.getElementById("second_num").value)
-  counter = 0
+  let counter = 0
   while (counter < num_two) {
     counter = counter + 1
     answer = answer + num_one
